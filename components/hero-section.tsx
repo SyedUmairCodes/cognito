@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { ThemeToggle } from "./theme-toggle";
 
 const menuItems = [];
 
@@ -53,7 +54,7 @@ export default function HeroSection() {
                     ))}
                   </ul>
                 </div> */}
-
+                <ThemeToggle />
                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
                   <Button asChild variant="outline" size="sm">
                     <Link href="#">
